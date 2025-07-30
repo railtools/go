@@ -1,5 +1,5 @@
-[build]
-builder = "nixpacks"
+[phases.build]
+cmds = ["go build -o main ."]
 
-[deploy]
-startCommand = "./main"
+[start]
+cmd = "./main"
